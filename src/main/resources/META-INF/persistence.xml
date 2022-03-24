@@ -1,0 +1,21 @@
+<persistence>
+    <persistence-unit name="Exer_10_4">
+        <description>Persistence Unit For test</description>
+        <class>hibernate.model.Category</class>
+        <class>hibernate.model.Topic</class>
+    </persistence-unit>
+
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.skillbox.Driver" />
+        <property name="javax.persistence.jdbc.url" value="jdbc:skillbox:mem:db1;DB_CLOSE_DELAY=-1;MVCC=TRUE" />
+        <property name="javax.persistence.jdbc.user" value="sa" />
+        <property name="javax.persistence.jdbc.password" value="" />
+        <property name="hibernate.show_sql" value="true" />
+        <property name="hibernate.hbm2ddl.auto" value="create" />
+    </properties>
+
+</persistence>
+
+
